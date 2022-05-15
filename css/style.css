@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5a5a5a;
+}
+.app{
+    height: 500px;
+    width: 500px;
+    margin: 25px auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background: #333333;
+}
+.app .topo{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #111111;
+}
+.app .topo input{
+    width: 300px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+}
+.app .topo button{
+    width: 75px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: #3b3bf1;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.app .topo button:hover{
+    background: #2c2cb9;
+}
+.app .tarefas{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: #111111;
+}
+.app .tarefas ul{
+    width: 100%;
+    padding: 20px 0;
+    overflow: auto;
+}
+.app .tarefas ul li{
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app .tarefas ul li p{
+    width: 350px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    background: #ffffff;
+}
+.app .tarefas ul li a.green{
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 2.5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #000000;
+    background: #29d129;
+    transition: 0.25s;
+}
+.app .tarefas ul li a.green:hover{
+    background: rgb(31, 161, 31);
+}
+.app .tarefas ul li a.red{
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 2.5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #000000;
+    background: #ee2020;
+    transition: 0.25s;
+}
+.app .tarefas ul li a.red:hover{
+    background: #c91b1b;
+}
+.concluida{
+    color: #04ff04;
+}
+@media(max-width: 1200px){
+    .container{
+        height: 100%;
+    }
+}
